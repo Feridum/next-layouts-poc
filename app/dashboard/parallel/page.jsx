@@ -31,6 +31,7 @@ export default async function Page() {
     const fields2 = getData2();
     const fields3 = getData3();
 
+
     return <>
         <h1>It work parallel</h1>
         <Suspense fallback={<div>Loading section 1....</div>}>
