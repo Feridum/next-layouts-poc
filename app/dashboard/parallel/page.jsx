@@ -3,26 +3,26 @@ import {Suspense} from "react";
 async function getData1() {
     await new Promise(r => setTimeout(r,  4 * 1000));
 
-    return null
+    return 1
 }
 
 async function getData2() {
     await new Promise(r => setTimeout(r, 1 * 1000));
 
-    return null
+    return 2
 }
 
 async function getData3() {
     await new Promise(r => setTimeout(r, 3 * 1000));
 
-    return null
+    return 3
 }
 
 async function LongFetch({ promise }) {
     const data = await promise;
 
     return (
-        <h2>Loaded long fetch</h2>
+        <h2>Loaded long fetch {data}</h2>
     )
 }
 
