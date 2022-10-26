@@ -12,7 +12,6 @@ export default function DashboardLayout({
         {name: 'Long', slug: 'long'},
         {name: 'Quick', slug: 'quick'},
         {name: 'Parallel', slug: 'parallel'},
-        {name: 'Error', slug: 'error'},
     ]
   return (
       <>
